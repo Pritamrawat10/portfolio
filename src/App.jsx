@@ -26,10 +26,9 @@ import "./styles.css";
 const siteProps = {
   name: "Pritam Singh",
   title: "Web Developer",
-  email: "pritamrawat@gmail.com",
+  email: "pritamrawat567@gmail.com",
   gitHub: "https://github.com/Pritamrawat10",
   linkedIn: "https://www.linkedin.com/in/pritam-singh-b5a1a8253/",
-  leetcode: "https://leetcode.com/u/pritamrawat/",
 };
 
 const primaryColor = "#4E567E";

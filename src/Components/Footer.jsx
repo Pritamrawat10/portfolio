@@ -13,7 +13,6 @@ import PropTypes from "prop-types";
 import devDotToIcon from "../images/socials/devdotto.svg";
 import envelopeIcon from "../images/socials/envelope.svg";
 import gitHubIcon from "../images/socials/github.svg";
-import instagramIcon from "../images/socials/instagram.svg";
 import linkedInIcon from "../images/socials/linkedin.svg";
 /**
  * 💡 Learning resources
@@ -27,12 +26,9 @@ const Footer = (props) => {
     devDotTo,
     email,
     gitHub,
-    instagram,
     linkedIn,
     name,
-    leetcode,
-    primaryColor,
-
+    primaryColor
   } = props;
 
   return (
@@ -45,7 +41,7 @@ const Footer = (props) => {
         gap: "2.5rem",
         padding: "5rem 0 3rem",
         backgroundColor: primaryColor,
-        width: "100vw"
+        width: "100vw",
       }}
     >
       <div
@@ -66,31 +62,14 @@ const Footer = (props) => {
           </a>
         )}
         {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
+          <a href={gitHub} target="_blank" rel="noopener noreferrer">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
-        {instagram && (
-          <a
-            href={`https://www.instagram.com/${instagram}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={instagramIcon} alt="Instagram" className="socialIcon" />
-          </a>
-        )}
         {linkedIn && (
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={linkedIn} target="_blank" rel="noopener noreferrer">
             <img src={linkedInIcon} alt="LinkedIn" className="socialIcon" />
           </a>
-        )}
-
-        {leetcode && (
-          <a href={`https://twitter.com/${leetcode}`} target="_blank" rel="noopener noreferrer"> </a>
         )}
       </div>
       <p className="small" style={{ marginTop: 0, color: "white" }}>
